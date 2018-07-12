@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".view.fragment.StepSignupAccountFragment">
+
+    <com.sambafedior.upscore.utils.fonts.TvFredokaRegular
+        android:id="@+id/textViewForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center_horizontal"
+        android:text="Pour mieux vous connaitre veuillez remplir le formulaire"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="30dp">
+
+        <com.sambafedior.upscore.utils.fonts.EdtRobotoRegular
+            android:id="@+id/editTextBirthDate"
+            style="@style/EditText_login"
+            android:layout_marginTop="20dp"
+            android:hint="date de naissance"
+            android:inputType="date"
+            android:nextFocusDown="@+id/editTextCity" />
+
+        <com.sambafedior.upscore.utils.fonts.EdtRobotoRegular
+            android:id="@+id/editTextCity"
+            style="@style/EditText_login"
+            android:layout_below="@+id/editTextBirthDate"
+            android:drawableEnd="@drawable/ic_gps_fixed_grey_600_24dp"
+            android:drawablePadding="2dp"
+            android:drawableRight="@drawable/ic_gps_fixed_grey_600_24dp"
+            android:hint="Ville"
+            android:imeOptions="actionDone"
+            android:inputType="text" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/editTextCity"
+            android:background="@color/colorGrey" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_centerInParent="true">
+
+            <com.sambafedior.upscore.utils.fonts.TvRobotoLight
+                android:id="@+id/tvAgence"
+                style="@style/TextViewSignup"
+                android:layout_margin="10dp"
+                android:text="Agence"
+                android:textAlignment="center" />
+
+            <com.sambafedior.upscore.utils.fonts.TvRobotoLight
+                android:id="@+id/tvSociete"
+                style="@style/TextViewSignup"
+                android:layout_margin="10dp"
+                android:text="Societe"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

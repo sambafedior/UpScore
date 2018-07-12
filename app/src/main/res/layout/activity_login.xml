@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:fitsSystemWindows="true"
+    tools:context=".view.activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_upscore_white"
+        android:contentDescription="@string/logo" />
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewLogin"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="30dp">
+
+        <com.sambafedior.upscore.utils.fonts.EdtRobotoRegular
+            android:id="@+id/editTextEmail"
+            style="@style/EditText_login"
+            android:layout_marginTop="20dp"
+            android:hint="identifiant"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/password" />
+
+        <com.sambafedior.upscore.utils.fonts.EdtRobotoRegular
+            android:id="@+id/editTextPassword"
+            style="@style/EditText_login"
+            android:layout_below="@+id/editTextEmail"
+            android:hint="mot de passe"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword" />
+
+        <com.sambafedior.upscore.utils.fonts.BtnFredokaRegular
+            android:id="@+id/btnLogin"
+            style="@style/button_Login"
+            android:layout_below="@+id/editTextPassword"
+            android:text="Connexion" />
+
+        <com.sambafedior.upscore.utils.fonts.TvRobotoLight
+            android:id="@+id/textViewForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnLogin"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="Mot de passe oublie ?"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <com.sambafedior.upscore.utils.fonts.TvFredokaRegular
+            android:id="@+id/textViewCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Vous n'avez pas de compte ?"
+            android:textColor="@color/colorGrey"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:indeterminateDrawable="@drawable/progress"
+        android:visibility="gone" />
+
+</RelativeLayout>

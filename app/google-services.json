@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "570495145666",
+    "firebase_url": "https://up-score.firebaseio.com",
+    "project_id": "up-score",
+    "storage_bucket": "up-score.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570495145666:android:c14799376823e52a",
+        "android_client_info": {
+          "package_name": "com.sambafedior.upscore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570495145666-j7t5at46dism4va2ea9p67ihed1iu30f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sambafedior.upscore",
+            "certificate_hash": "35512db0c731b2348aa072b7f2dcce0452f4d616"
+          }
+        },
+        {
+          "client_id": "570495145666-nh283tn2hf4ac4a96srj83rsov2ubf1v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAPuJhY5IsmKr540Fmv-_pRjYPulH86dY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570495145666-nh283tn2hf4ac4a96srj83rsov2ubf1v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

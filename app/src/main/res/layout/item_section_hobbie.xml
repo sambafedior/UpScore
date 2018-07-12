@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <com.sambafedior.upscore.utils.fonts.TvFredokaRegular
+        android:id="@+id/tvSectionHobbie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sport"
+        android:textColor="@color/colorGrey"
+        android:textSize="20sp" />
+</LinearLayout>

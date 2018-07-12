@@ -1,0 +1,47 @@
+[
+  {
+    "hobbie": "Sport",
+    "tag": [
+      "Football",
+      "Basket Ball",
+      "Running",
+      "Fitness"
+    ]
+  },
+  {
+    "hobbie": "Mode",
+    "tag": [
+      "Luxe",
+      "Shoes",
+      "Shopping",
+      "Make up",
+      "coiffure",
+      "bijoux"
+    ]
+  },
+  {
+    "hobbie": "Musique",
+    "tag": [
+      "rap",
+      "hip-hop",
+      "dance"
+    ]
+  },
+  {
+    "hobbie": "Food",
+    "tag": [
+      "restaurant",
+      "bar",
+      "drink"
+    ]
+  },
+  {
+    "hobbie": "Other",
+    "tag": [
+      "hotel",
+      "voyage",
+      "voiture"
+    ]
+  }
+]
+

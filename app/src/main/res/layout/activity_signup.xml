@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".view.activity.SignupActivity">
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edt_border_white"
+        android:orientation="vertical">
+
+        <com.sambafedior.upscore.utils.fonts.EdtRobotoRegular
+            android:id="@+id/editTextLastName"
+            style="@style/EditText_register"
+            android:hint="nom"
+            android:inputType="textCapWords"
+            android:nextFocusDown="@+id/editTextfirst_name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGreyClair" />
+
+        <com.sambafedior.upscore.utils.fonts.EdtRobotoRegular
+            android:id="@+id/editTextFirstName"
+            style="@style/EditText_register"
+            android:layout_below="@+id/editTextLastName"
+            android:hint="prenom"
+            android:inputType="textCapWords"
+            android:nextFocusDown="@+id/editTextEmail" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGreyClair" />
+
+        <com.sambafedior.upscore.utils.fonts.EdtRobotoRegular
+            android:id="@+id/editTextemail"
+            style="@style/EditText_register"
+            android:layout_below="@+id/editTextFirstName"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/editPhoneNumber" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGreyClair" />
+
+        <com.sambafedior.upscore.utils.fonts.EdtRobotoRegular
+            android:id="@+id/editTextphone_number"
+            style="@style/EditText_register"
+            android:layout_below="@+id/editTextEmail"
+            android:hint="telephone"
+            android:inputType="phone"
+            android:nextFocusDown="@+id/editTextPassword" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGreyClair" />
+
+        <com.sambafedior.upscore.utils.fonts.EdtRobotoRegular
+            android:id="@+id/editTextpassword"
+            style="@style/EditText_register"
+            android:layout_below="@+id/editTextphoneNumber"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:nextFocusDown="@+id/editTextPasswordConfirm" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGreyClair" />
+
+        <com.sambafedior.upscore.utils.fonts.EdtRobotoRegular
+            android:id="@+id/editTextpassword_confirm"
+            style="@style/EditText_register"
+            android:layout_below="@+id/editTextPassword"
+            android:hint="confirmation du mot de passe"
+            android:inputType="textPassword"
+            android:nextFocusDown="@+id/editTextbirth_date" />
+
+    </LinearLayout>
+
+    <com.sambafedior.upscore.utils.fonts.BtnFredokaRegular
+        android:id="@+id/btnTerminer"
+        style="@style/button_Login"
+        android:layout_below="@+id/body"
+        android:layout_marginTop="35dp"
+        android:text="Terminer" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:indeterminateDrawable="@drawable/progress"
+        android:visibility="gone" />
+</RelativeLayout>
